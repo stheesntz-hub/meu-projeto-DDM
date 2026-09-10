@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de seleção jquery</title>
+   <p id="caixa"> esta caixa vai sumir e aparecer novamente com animação </p>
+    <button id="btn-toggle">Alternar visibilidade</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+ <script>
+
+ $(document).ready(function() {
+    $('#btn-toggle').click(function() {
+        $('#caixa').toggle(500); 
+    });
+ });
+</script> 
+</body>
+</html>
